@@ -10,37 +10,42 @@
     <title>Catanduanes ABACA ULTRA</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar sticky-top navbar-expand-lg">
       <div class="container">
-
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">ABOUT US</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">RACE MECHANICS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">PARTNERS & SPONSORS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT US</a>
-          </li>
-        </ul>
-
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#intro">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mechanics">RACE MECHANICS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" >PARTNERS & SPONSORS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" >CONTACT US</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <section id="hero-banner">
       <div class="container">
         <div class="row">
-          <div class="col col-lg-5">
-            <img src="/assets/images/abaca-ultra.webp" alt="">
+          <div class="col-12 col-lg-5">
+            <div class="hero-banner-image">
+              <img src="/assets/images/abaca-ultra.webp" alt="">
+            </div>
           </div>
-          <div class="col col-lg-7">
+          <div class="col-12 col-lg-7">
             <div class="hero-banner-content">
               <div class="race-details">
                 <div class="race-detail-container">
-                  <label>TOTAL DISTANCE</label>
+                  <label>DISTANCE</label>
                   <div class="race-detail">
                     <i class="fas fa-location-dot"></i>
                     <p>50KM</p>
@@ -50,7 +55,7 @@
                   <label>TIME</label>
                   <div class="race-detail">
                     <i class="fas fa-clock"></i>
-                    <p>10 hours</p>
+                    <p>10 HRS</p>
                   </div>
                 </div>
                 <div class="race-detail-container">
@@ -68,5 +73,123 @@
         </div>
       </div>
     </section>
+    <section id="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-7">
+            <div class="intro-content">
+              <h2>Discover the Beauty of Catanduanes with Every Run!</h2> 
+              <p>The ABACA ULTRA brings athletes together to race through the island’s scenic landscapes, promoting fitness while showcasing Catanduanes’ vibrant culture and stunning tourism spots.</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5">
+            <div class="intro-image">
+              <img src="/assets/images/intro-image-speed.webp" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="countdown-wrapper">
+        <div class="container">
+          <div id="countdown">
+            <div class="run-icon">
+              <img src="/assets/images/run-start.webp" alt="">
+            </div>
+            <div class="countdown-item">
+              <span id="days">00</span>
+              <p>Days</p>
+            </div>
+            <span class="divider">:</span>
+            <div class="countdown-item">
+              <span id="hours">00</span>
+              <p>Hours</p>
+            </div>
+            <span class="divider">:</span>
+            <div class="countdown-item">
+              <span id="minutes">00</span>
+              <p>Minutes</p>
+            </div>
+            <span class="divider">:</span>
+            <div class="countdown-item">
+              <span id="seconds">00</span>
+              <p>Seconds</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="mechanics">
+      <div class="container">
+        <div class="section-title">
+          <h2>RACE MECHANICS</h2>
+        </div>
+        <div class="row mechanics-row">
+          <div class="col-12 col-lg-4"><h3>Course Map</h3></div>
+          <div class="col-12 col-lg-8">
+            <div class="mechanics-content">
+              <img src="/assets/images/race-map.webp" alt="">
+            </div> 
+          </div>
+        </div>
+        <div class="row mechanics-row">
+          <div class="col-12 col-lg-4"><h3>Registration</h3></div>
+          <div class="col-12 col-lg-8">
+            <div class="mechanics-content">
+              <p>Early Bird Registration<br/><span class="bold-text">Php 2,500.00</span></p>
+              <p>Regular Registration<br/><span class="bold-text">Php 2,800.00</span></p>
+              <p>Registration includes a race kit with a bib number, an official race shirt, and other goodies.</p>
+              <p class="mb-0">Participants can register online.</p>
+            </div> 
+          </div>
+        </div>
+        <div class="row mechanics-row">
+          <div class="col-12 col-lg-4"><h3>Aid Stations</h3></div>
+          <div class="col-12 col-lg-8">
+            <div class="mechanics-content">
+              <p>Aid stations will be placed every 5 kilometers, providing water, energy drinks, and snacks to keep you fueled throughout the race.</p>
+              <p class="mb-0">Medical assistance will be available at all aid stations and the finish line.</p>
+            </div> 
+          </div>
+        </div>
+        <div class="row mechanics-row">
+          <div class="col-12 col-lg-4"><h3>Cut-off Times</h3></div>
+          <div class="col-12 col-lg-8">
+            <div class="mechanics-content">
+              <p>Participants must complete the 50KM course within 10 hours.</p>
+              <p class="mb-0">Checkpoints along the route will monitor progress to ensure the safety and well-being of all runners.</p>
+            </div> 
+          </div>
+        </div>
+        <div class="row mechanics-row">
+          <div class="col-12 col-lg-4"><h3>Safety Guidelines</h3></div>
+          <div class="col-12 col-lg-8">
+            <div class="mechanics-content">
+              <p>Runners must wear their bib numbers at all times for identification.</p>
+              <p>It is recommended to carry a personal water bottle or hydration pack.</p>
+              <p class="mb-0">Listen to your body and seek medical assistance if you feel unwell during the race.</p>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="finisher-shirt">
+      <div class="section-bg"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="section-content">
+              <h2>FINISHER’S SHIRT</h2>
+              <p>All participants who complete the race within the cut-off time will receive an exclusive finisher’s shirt.</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="section-image">
+              <img src="/assets/images/shirt.webp" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="assets/js/main.js"></script>
   </body>
 </html>
