@@ -30,7 +30,6 @@ p {
         }
         .navbar-collapse {
             justify-content: flex-end;
-            background-color: white;
             ul.navbar-nav {
                 list-style: none;
                 padding: 0;
@@ -40,7 +39,7 @@ p {
                 li {
                     margin-left: 2rem;
                     a {
-                        color: $darkblue;
+                        color: #fff;
                         text-decoration: none;
                         height: 70px;
                         line-height: 70px;
@@ -290,8 +289,10 @@ p {
         .container {
             --bs-gutter-x: 2.5rem;
             .navbar-toggler {
+                padding: 10px 16px;
+                margin-top: 8px;
                 &[aria-expanded="false"] {
-                    background-color: transparent;
+                    background-color: rgb(10 37 54 / 47%);
                     .fas {
                         color: white;
                     }
@@ -303,6 +304,7 @@ p {
                 }
             }
             .navbar-collapse {
+                background-color: #fff;
                 ul.navbar-nav {
                     li {
                         margin-left: 0;
