@@ -8,6 +8,31 @@ import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 // Place any custom JS here
 //
 
+const element = document.getElementById('mainnav');
+const classToAdd = 'sticky-nav';
+const viewportThreshold = 500;
+
+function debounce(func, delay) {
+    let timer;
+    return function() {
+        const context = this;
+        const args = arguments;
+        clearTimeout(timer);
+        timer = setTimeout(function() {
+            func.apply(context, args);
+        }, delay);
+    };
+}
+
+window.addEventListener('scroll', debounce(function() {
+    const scrollPosition = window.pageYOffset;
+    if (scrollPosition > viewportThreshold) {
+      element.classList.add(classToAdd);
+    } else {
+      element.classList.remove(classToAdd);
+    }
+}, 100));
+
 // Set the date we're counting down to
 var countDownDate = new Date("May 24, 2025 03:00:00").getTime();
 

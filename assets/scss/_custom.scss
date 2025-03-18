@@ -10,7 +10,31 @@ p {
 }
 .navbar {
     position: absolute;
+    top: 0;
     width: 100%;
+    &.sticky-nav {
+        background-color: white;
+        position: fixed;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        z-index: 1000;
+        .container {
+            .navbar-toggler {
+
+            }
+            .navbar-collapse {
+                ul.navbar-nav {
+                    --bs-nav-link-padding-y: 0;
+                    li {
+                        a {
+                            color: $darkblue;
+                            height: 50px;
+                            line-height: 54px;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .container {
         justify-content: flex-end;
         .navbar-toggler {
