@@ -137,43 +137,18 @@ p {
                 margin-bottom: 40px;
                 font-size: 3rem;
             }
+            h4 {
+                color: white;
+                font-weight: 600;
+            }
             img {
                 width: 100%;
                 height: auto;
             }
         }
     }
-}
-
-#intro {
-    padding: 60px 0 40px;
-    position: relative;
-    .container {
-        .row {
-            .col-12 {
-                display: flex;
-                align-items: center;
-                .intro-content {
-                    margin-top: -60px;
-                    h2 {
-                        color: $orange;
-                        margin-bottom: 20px;
-                        font-size: 2.5rem;
-                    }
-                }
-                .intro-image {
-                    position: relative;
-                    z-index: 10;
-                    img {
-                        width: 100%;
-                        height: auto;
-                    }
-                }
-            }
-        }
-    }
-    .countdown-wrapper {
-        background-color: $darkblue;
+        .countdown-wrapper {
+        background-color: #0a2536ab;
         padding: 20px 0;
         position: absolute;
         bottom: 0;
@@ -183,9 +158,9 @@ p {
         .container {
             #countdown {
                 display: flex;
-                justify-content: flex-start;
+                justify-content: center;
                 span.divider {
-                    font-size: 3.2rem;
+                    font-size: 4.2rem;
                     line-height: 3.2rem;
                     font-style: italic;
                     color: $orange;
@@ -223,6 +198,35 @@ p {
                         font-style: italic;
                         margin-bottom: 0;
                         text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#intro {
+    padding: 60px 0 40px;
+    position: relative;
+    .container {
+        .row {
+            .col-12 {
+                display: flex;
+                align-items: center;
+                .intro-content {
+                    margin-top: -60px;
+                    h2 {
+                        color: $orange;
+                        margin-bottom: 20px;
+                        font-size: 2.5rem;
+                    }
+                }
+                .intro-image {
+                    position: relative;
+                    z-index: 10;
+                    img {
+                        width: 100%;
+                        height: auto;
                     }
                 }
             }
@@ -356,13 +360,22 @@ p {
         .section-title {
             color: $orange;
             margin-bottom: 40px;
+            &.partners-title {
+                margin-top: 60px;
+            }
         }
         .row {
             .col-6 {
                 display: flex;
                 align-items: center;
                 .sponsor-logo {
-                    padding: 60px;
+                    padding: 40px;
+                    background: white;
+                    margin-bottom: 20px;
+                    border-radius: 20px;
+                    aspect-ratio: 1 / 1;
+                    display: flex;
+                    align-items: center;
                     img {
                         width: 100%;
                         height: auto;
@@ -513,12 +526,26 @@ p {
 }
 
 .footer-section {
-    background-color: $darkblue;
+    background-color: #0b1e2a;
     padding: 40px 0;
     color: white;
     .container {
         .row {
             .col-12 {
+                .footer-contact {
+                    padding-left: 40px;
+                    .fas {
+                        width: 30px;
+                        text-align: center;
+                        background-color: $orange;
+                        height: 30px;
+                        line-height: 30px;
+                        color: white;
+                        border-radius: 100%;
+                        font-size: 15px;
+                        margin-right: 10px;
+                    }
+                }
                 .footer-content {
                     .social-media {
                         ul {
@@ -587,8 +614,9 @@ p {
                 .footer-logo {
                     height: 100%;
                     display: flex;
-                    align-items: center;
+                    align-items: flex-start;
                     img {
+                        margin-top: 5px;
                         width: 100%;
                         height: auto;
                     }
@@ -677,30 +705,7 @@ p {
                 }
             }
         }
-    }
-    #intro {
-        .container {
-            .row {
-                .col-12 {
-                    .intro-content {
-                        margin-top: 0;
-                        h2 {
-                            font-size: 1.8rem;
-                        }
-                    }
-                    .intro-image {
-                        text-align: center;
-                        width: 100%;
-                        margin-bottom: 120px;
-                        img {
-                            width: 80vw;
-                            margin: 0 auto;
-                        }
-                    }
-                }
-            } 
-        }
-        .countdown-wrapper {
+                .countdown-wrapper {
             .container {
                 #countdown {
                     justify-content: space-between;
@@ -727,6 +732,29 @@ p {
                     }
                 }
             }
+        }
+    }
+    #intro {
+        .container {
+            .row {
+                .col-12 {
+                    .intro-content {
+                        margin-top: 0;
+                        h2 {
+                            font-size: 1.8rem;
+                        }
+                    }
+                    .intro-image {
+                        text-align: center;
+                        width: 100%;
+                        margin-bottom: 120px;
+                        img {
+                            width: 80vw;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            } 
         }
     }
     #mechanics {
@@ -820,6 +848,9 @@ p {
         .container {
             .row {
                 .col-12 {
+                    .footer-contact {
+                        padding-left: 0;
+                    }
                     .footer-content {
                         .social-media {
                             margin-bottom: 40px;
